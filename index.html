@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="idgiatriA" value="2"><input type="text" id="idgiatriB" value="5">
+    <button type="button" onclick="tinhtong()">+</button><button type="button" onclick="tinhhieu()">-</button><button type="button" onclick="tinhtich()">*</button><button type="button" onclick="tinhthuong()">/</button>
+</body>
+<Script>
+    function tinhtongAB(a , b) {
+        return a + b;
+    }
+    function tinhhieu(a , b) {
+        return a - b;
+    }
+    function tinhtichAB(a , b){
+        return a * b;
+    }   
+    
+    function tinhthuongAB(a , b){
+        return a / b;
+    }
+    function tinhtong() {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+        console.log("Gia tri a", a);
+        console.log("Gia tri b", b);
+        var tong = parseInt(a) + parseInt(b);
+     alert("Tong " + tong); 
+       
+    }
+        
+    function tinhhieu() {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+        console.log("gia tri a", a);
+        console.log("gia tri b", b);
+        var hieu = parseInt(a) -parseInt(b);
+        alert("hieu "  + hieu);
+    }
+    function tinhtich() {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+        console.log("gia tri a", a);
+        console.log("gia tri b", b);
+        var tich = parseInt(a) * parseInt(b);
+        alert("tich"  + tich);
+    }
+    function tinhthuong() {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+        console.log("gia tri a", a);
+        console.log("gia tri b", b);
+        var thuong = parseInt(a) /parseInt(b);
+        alert("thuong "  + thuong);
+    }
+
+</Script>
+
+</html>
